@@ -28,9 +28,8 @@ def trigger_bot_script(**kwargs):
     bash_command = (
         "python "
         + current_directory
-        + "/cops_bot/cops_bot.py --"
-        + servicenow_api_token 
-        + " --"
+        + "/cops_bot/cops_bot.py "
+        + servicenow_api_token
         + gemini_dev_api_token 
     )
 
